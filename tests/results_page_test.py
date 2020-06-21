@@ -9,7 +9,7 @@ class ResultsTests(BaseTest):
         hp = HomePage(self.driver)
         rp = ResultsPage(self.driver)
         rp.search_product(
-            (random.choice(["Drony"])))
+            (random.choice(["Drony", "Java Script", "Java", "Roboty", "Raspberry"])))
         rp.search_product2()
         rp.search_product_results()
         rp.submit_results()
