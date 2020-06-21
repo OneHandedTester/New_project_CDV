@@ -24,10 +24,8 @@ class RegisterPageLocators():
     REGISTER_BTN = (By. XPATH, '//*[@id="SubmitCreate"]')
     ERROR_COM = (By. XPATH, '//*[@id="create_account_error"]')
     ERROR2_COM= (By. XPATH, "//*[contains(text(), 'Nieprawidłowy adres e-mail')]")
-    BAD_POPUP_EL = (By. XPATH, '//*[@id="consentForm"]/div[1]')
-    BAD_POPUP_BTN = (By. XPATH, '//*[@id="smwpConfirmationButton"]')
-    BAD_POPUP2_EL = (By. XPATH, '// *[ @ id = "bhr-popup-0a5d9ae6-df96-49de-ac18-b62656648aff"]')
-    BAD_POPUP2_BTN = (By. XPATH, '//*[@id="bhr-popup-form"]/div/div/div[2]/div[4]]')
+    BAD_POPUP_BTN = (By. ID, 'smwpRejectionButton')
+    BAD_POPUP2_BTN = (By. XPATH, '// *[ @ id = "bhr-popup-form"] / div / div / div[2] / div[4]')
 
 # VIEW ACCOUNT CREATION - FORM:
     FIRSTNAME_INPUT = (By. ID, "customer_firstname")
@@ -60,7 +58,7 @@ class ResultsPageLocators():
     ORDER_PRODUCT_LIST = (By. XPATH, '//*[@class="product_counter"]')
     SUM_BRUTTO_EL = (By. XPATH, '//*[@id="total_product"]')
     SUM_SHIPPING_EL = (By. XPATH, '//*[@id="total_shipping"]')
-    SUM_TOTAL_PRICE_EL = (By.XPATH, '//*[@id="total_price"]')
+    SUM_TOTAL_PRICE = (By. XPATH, '//html/body/div[1]/div[2]/div/div[2]/form/fieldset/div/div[1]/div[1]/div[1]/div[1]/table/tbody/tr[5]/td[2]/span')
     CLEAR_BASKET_BTN = (By. XPATH, '//*[@id="myBtn"]')
     CLEAR_BASKET_ACCEPT_BTN = (By. XPATH, '//*[@id="modal-confirm"]')
 
