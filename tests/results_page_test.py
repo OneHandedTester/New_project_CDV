@@ -18,8 +18,6 @@ def get_data(file_name):
         print(row)
     return slowa
 
-
-
 @ddt
 class ResultsTests(BaseTest):
     @data(*get_data("/home/tester/PycharmProjects/BotlandProjectPOP/tests/products.csv"))
