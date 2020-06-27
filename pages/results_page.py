@@ -16,19 +16,6 @@ def get_data(file_name):
         print(row)
     return slowa
 
-# slowa = []
-#
-# with open(file_name, 'r') as csv_file:
-#     csv_reader = csv.reader(csv_file)
-#     next(csv_reader)
-#     for line in csv_reader:
-#         A = print(line[1])
-#     os.path.isfile('/home/tester/PycharmProjects/BotlandProjectPOP/products.csv')
-
-
-
-
-
 class ResultsPage(BasePage):
     def close_cookies(self):
         cookies = self.driver.find_element(*ResultsPageLocators.COOKIES_BTN)
