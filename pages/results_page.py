@@ -30,7 +30,6 @@ class ResultsPage(BasePage):
         searcher = self.driver.find_element(*ResultsPageLocators.SEARCHER_INPUT)
         searcher.send_keys(products)
 
-
     def search_product2(self):
         el = self.driver.find_element_by_css_selector('#search_query_top')
         print(el)
